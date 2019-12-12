@@ -33,11 +33,11 @@ installationDir=/var/boomi #default atom installation dir
   Install with UID
   ----------------------------------------------
 
-  ./atomdocker_install64.sh -n <custom Atoom container name> -u <username@x.com> -p <PWD> -a accountid1
+  ./atomdocker_install64.sh -n "<custom Atom container name>" -u "<username@x.com>" -p <PWD> -a "accountid1"
 
   Install With Token
   -------------------------------------------------
-./atomdocker_install64.sh -n <custom Atoom container name> -k <token>
+./atomdocker_install64.sh -n "<custom Atoom container name>" -k "<token>"
 
 9.Post running the installtion script in linux/ Unix /Mac go to the install directory and open the install_<atom name>.log. 
   

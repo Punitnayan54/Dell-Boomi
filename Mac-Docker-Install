@@ -4,4 +4,6 @@
 3. Go to the Docker Icon on the Right Top of the Mac. Select Preferences ---> Disk--->Move disk Folder (Chose desired Image folder) ---> Use It
 4. Preferences --->File Sharing is used t modify the file prefernces in the docker image.
 5. Go to Command Line and type "DOCKER" and it will list all the commands for Docker.
+6. From Command Line Terminal type "docker ps -a" to list of docker container the sample looks like the one below.
+
  

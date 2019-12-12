@@ -5,5 +5,12 @@
 4. Preferences --->File Sharing is used t modify the file prefernces in the docker image.
 5. Go to Command Line and type "DOCKER" and it will list all the commands for Docker.
 6. From Command Line Terminal type "docker ps -a" to list of docker container the sample looks like the one below.
+CONTAINER ID   IMAGE                COMMAND             CREATED             STATUS     PORTS         NAMES
+e63a0da68996  boomi/atom:release   "/sbin/my_init"     6 minutes ago       Created                    Punit-Training-Dev
+7. The same can be achieved by executing "docker container ls" but it will list all the running containers and binding ports.
+CONTAINER ID  IMAGE                COMMAND            CREATED       STATUS         PORTS                    NAMES
+bbf411d7489f  boomi/atom:release   "/sbin/my_init"    38 hours ago   Up 38 hours   0.0.0.0:9090->9090/tcp   Punit-Training-Dev
+8. To remove a docker container it must be stopped. Once stopped run "docker container rm <container_id>" this deletes the docker container.
+
 
  

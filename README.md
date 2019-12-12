@@ -11,6 +11,7 @@ Installing Atom on a Docker
 ATOM_HOME="/var/boomi"
 installationDir=/var/boomi #default atom installation dir
 6. By default the ATOM conects to Boomi on port 9090 and this can be traced in the installation file. 
+------------------------------------------------------------------------------
      platform=https://atom.boomi.com
         if [ `echo $platform | grep 'localhost' | wc -l` -gt 0 ]
         then
@@ -19,6 +20,7 @@ installationDir=/var/boomi #default atom installation dir
         else
             run_command="docker run -p ${port}:9090 -h ${atomname}"
         fi
+	---------------------------------------------------------------------------
 7. The home directory or installtion directory should have their parent directory listed as preferred directory for Docker mount.
 8. Once everything is ready run the installtion.
   Running the installtion script
@@ -34,11 +36,11 @@ installationDir=/var/boomi #default atom installation dir
   ----------------------------------------------
 
   ./atomdocker_install64.sh -n custom Atom container name -u "username@x.com" -p PWD -a accountid1
-
+-----------------------------------------------------
   Install With Token
   -------------------------------------------------
 ./atomdocker_install64.sh -n custom Atom container name -k token
-
+-------------------------------------------------
 9.Post running the installtion script in linux/ Unix /Mac go to the install directory and open the install_<atom name>.log. 
   
 Following entries will appear
